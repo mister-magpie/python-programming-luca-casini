@@ -89,5 +89,7 @@ print(L_sorted)
 # Write to a file the following 2 x 2 table:
 # 2 4
 # 3 6
+print("\nExercise 9 -> saves tabella.txt\n")
+
 with open("tabella","w") as f:
     f.write("2 \t 4 \n3 \t 6 ")

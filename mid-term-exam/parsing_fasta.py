@@ -16,7 +16,6 @@ Pseudo-code:
 -using regular expressions find the organism name in those records
 -concatenate the strings of the sequence and compute length
 -print organism and sequence length
-
 '''
 import re
 
@@ -33,7 +32,7 @@ def parsing_fasta():
         #split lines on \n to separate header and sequence
         x = r.split("\n")
 
-        # find organism in header
+        # find organism in header, reads from "OS=" to the next value "GN"
         org = re.search("OS=*([^GN]+)",x[0]).group(0)
 
         # concatenate sequence and compute lenght
