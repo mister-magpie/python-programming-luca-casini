@@ -15,7 +15,6 @@ pseudo-code:
 -compute the average over this array using sum/length
 -print the array
 -print the average
-
 '''
 
 import math
@@ -36,4 +35,4 @@ def get_numbers(n):
 
 # compute the average value of a list of numbers. cast to float for exact division
 def average(x):
-    return sum(x)/float(len(x))
+    return sum(x) / float( len(x) )

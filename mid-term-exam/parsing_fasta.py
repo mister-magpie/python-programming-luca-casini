@@ -13,7 +13,7 @@ Pseudo-code:
 -return only the records that do not contain the string 'OS=Homo sapiens'
 
 -save those record in a new file
--using regular expressions find the organism name in those records
+-using regular expressions find the organism name in those records (after OS before GN)
 -concatenate the strings of the sequence and compute length
 -print organism and sequence length
 '''
